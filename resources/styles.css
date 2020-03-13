@@ -34,3 +34,19 @@
   x: 30%;
   y: 75%;
 }
+
+#dayLabel {
+  font-size: 20;
+  text-length: 32;
+  fill: white;
+  x: 25%;
+  y: 40%;
+}
+
+#dateLabel {
+  font-size: 20;
+  text-length: 32;
+  fill: white;
+  x: 55%;
+  y: 40%;
+}

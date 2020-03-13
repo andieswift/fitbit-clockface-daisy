@@ -1,4 +1,6 @@
 <svg class="background">
+  <text id="dayLabel" />
+  <text id="dateLabel" />
   <text id="timeLabel" />
   <text id="batteryLabel" />
   <text id="stepsLabel" />
