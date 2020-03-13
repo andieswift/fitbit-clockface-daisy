@@ -18,3 +18,11 @@
   x: 60%;
   y: 75%;
 }
+
+#stepsLabel {
+  font-size: 20;
+  text-length: 32;
+  fill: white;
+  x: 40%;
+  y: 75%;
+}

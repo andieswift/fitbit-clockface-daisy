@@ -3,6 +3,7 @@ import document from "document";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import { battery } from "power";
+import userActivity from "user-activity";
 
 // SELECTORS
 const timeLabel = document.getElementById("timeLabel");
@@ -27,3 +28,7 @@ clock.ontick = (evt) => {
 //BATTERY
 let batteryValue = battery.chargeLevel;
 batteryLabel.text = `${batteryValue}%`;
+
+//STEPS
+let stepsValue = (userActivity.today.adjusted["steps"] || 0);
+stepsLabel.text = stepsValue;
