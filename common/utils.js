@@ -6,5 +6,3 @@ export function zeroPad(i) {
   }
   return i;
 }
-
-//HEART RATE

@@ -1,3 +1,4 @@
 <svg class="background">
-  <text id="myLabel" />
+  <text id="timeLabel" />
+  <text id="batteryLabel" />
 </svg>

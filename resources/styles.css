@@ -2,9 +2,8 @@
   viewport-fill: black;
 }
 
-#myLabel {
+#timeLabel {
   font-size: 80;
-  font-family: Colfax-Light;
   text-length: 32;
   text-anchor: middle;
   x: 50%;
@@ -12,15 +11,10 @@
   fill: white;
 }
 
-
-#heartRate{
-
-  font-family: System-Regular;
-  font-size: 30;
-  fill: white;
+#batteryLabel {
+  font-size: 15;
   text-length: 32;
-  text-anchor: middle;
-  x: 58%;
-  y: 85%;
-
+  fill: white;
+  x: 60%;
+  y: 75%;
 }
