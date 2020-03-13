@@ -24,5 +24,13 @@
   text-length: 32;
   fill: white;
   x: 40%;
+  y: 80%;
+}
+
+#heartRateLabel {
+  font-size: 20;
+  text-length: 32;
+  fill: white;
+  x: 30%;
   y: 75%;
 }

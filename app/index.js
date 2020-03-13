@@ -4,10 +4,13 @@ import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import { battery } from "power";
 import userActivity from "user-activity";
+import { HeartRateSensor } from "heart-rate";
 
 // SELECTORS
 const timeLabel = document.getElementById("timeLabel");
 const batteryLabel = document.getElementById("batteryLabel");
+const stepsLabel = document.getElementById("stepsLabel");
+const heartRateLabel = document.getElementById("heartRateLabel");
 
 //TIME
 clock.granularity = "minutes";
@@ -32,3 +35,11 @@ batteryLabel.text = `${batteryValue}%`;
 //STEPS
 let stepsValue = (userActivity.today.adjusted["steps"] || 0);
 stepsLabel.text = stepsValue;
+
+//HEARTRATE
+const hrm = new HeartRateSensor();
+
+hrm.onreading = function () {
+  heartRateLabel.text = `${hrm.heartRate}`
+}
+hrm.start();
