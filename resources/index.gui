@@ -4,7 +4,7 @@
   <text id="dateLabel" />
   <text id="timeLabel" />
   <rect  class="battery-container" >
-    <rect id="battery-color" class="red" />
+    <rect id="battery-color" class="battery-fill" />
     <image class="battery" href="icons/battery-icon.png" />
   </rect>
   <text id="batteryLabel" />
@@ -16,6 +16,4 @@
     <image class="heart" href="icons/heart-icon.png" />
   </rect>
   <text id="heartRateLabel" />
-
-
 </svg>
