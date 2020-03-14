@@ -5,6 +5,7 @@ import * as util from "../common/utils";
 import { battery } from "power";
 import userActivity from "user-activity";
 import { HeartRateSensor } from "heart-rate";
+import { display } from "display";
 
 
 // SELECTORS
@@ -43,6 +44,7 @@ clock.ontick = (evt) => {
   //BATTERY
   let batteryValue = battery.chargeLevel;
   batteryLabel.text = `${batteryValue}%`;
+  let color = chooseBatteryColor(batteryValue);
 
 
   //STEPS
@@ -51,14 +53,31 @@ clock.ontick = (evt) => {
 }
 
 
+//CHANGE BATTERY COLOR
+function chooseBatteryColor(percentage) {
+  if (percentage >= 50) {
+    batteryFill.style.fill = '#6dc74a';
+  } else if (percentage >= 25) {
+    batteryFill.style.fill = '#f7f25e';
+  } else {
+    batteryFill.style.fill = '#fc4e54';
+  }
 
-//HEARTRATE
-const hrm = new HeartRateSensor();
-
-hrm.onreading = function () {
-  heartRateLabel.text = `${hrm.heartRate}`
+  percentage = .01 * percentage;
+  batteryFill.width = percentage * 24;
 }
-hrm.start();
+
+if (HeartRateSensor) {
+  const hrm = new HeartRateSensor();
+  hrm.addEventListener("reading", () => {
+    heartRateLabel.text = `${hrm.heartRate}`;
+  });
+  display.addEventListener("change", () => {
+    // Automatically stop the sensor when the screen is off to conserve battery
+    display.on ? hrm.start() : hrm.stop();
+  });
+  hrm.start();
+}
 
 //TODAY
 

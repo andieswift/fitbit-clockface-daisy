@@ -20,16 +20,16 @@
 }
 
 #batteryLabel {
-  font-size: 20;
+  font-size: 25;
   text-length: 32;
   fill: white;
-  x: 65%;
+  x: 61%;
   y: 65%;
 }
 
 
 #stepsLabel {
-  font-size: 20;
+  font-size: 25;
   text-length: 32;
   fill: white;
   x: 50%;
@@ -37,26 +37,26 @@
 }
 
 #heartRateLabel {
-  font-size: 20;
+  font-size: 25;
   text-length: 32;
   fill: white;
-  x: 37%;
+  x: 35%;
   y: 65%;
 }
 
 #dayLabel {
-  font-size: 20;
+  font-size: 30;
   text-length: 32;
   fill: white;
-  x: 33%;
+  x: 26%;
   y: 33%;
 }
 
 #dateLabel {
-  font-size: 20;
+  font-size: 30;
   text-length: 32;
   fill: white;
-  x: 48%;
+  x: 47%;
   y: 33%;
 }
 
@@ -80,7 +80,7 @@
 .battery-container{
   width: 8%;
   height: 8%;
-  x: 55%;
+  x: 51%;
   y: 58%;
   fill: #595959;
 }
@@ -88,13 +88,13 @@
 .battery {
   width: 8%;
   height: 8%;
-  x: 55%;
+  x: 51%;
   y: 58%;
 }
 
 .battery-fill  {
   height: 8%;
-  x: 55%;
+  x: 51%;
   y: 58%;
 }
 
