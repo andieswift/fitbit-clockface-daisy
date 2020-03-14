@@ -14,6 +14,7 @@ const stepsLabel = document.getElementById("stepsLabel");
 const heartRateLabel = document.getElementById("heartRateLabel");
 const dateLabel = document.getElementById("dateLabel");
 const dayLabel = document.getElementById("dayLabel");
+const batteryFill = document.getElementById("battery-color");
 
 //TIME
 clock.granularity = "minutes";
@@ -38,15 +39,18 @@ clock.ontick = (evt) => {
   }
   let mins = util.zeroPad(today.getMinutes());
   timeLabel.text = `${hours}:${mins}`;
+
+  //BATTERY
+  let batteryValue = battery.chargeLevel;
+  batteryLabel.text = `${batteryValue}%`;
+
+
+  //STEPS
+  let stepsValue = (userActivity.today.adjusted["steps"] || 0);
+  stepsLabel.text = stepsValue;
 }
 
-//BATTERY
-let batteryValue = battery.chargeLevel;
-batteryLabel.text = `${batteryValue}%`;
 
-//STEPS
-let stepsValue = (userActivity.today.adjusted["steps"] || 0);
-stepsLabel.text = stepsValue;
 
 //HEARTRATE
 const hrm = new HeartRateSensor();
@@ -60,7 +64,7 @@ hrm.start();
 
 
 function getDayName(day) {
-  let days = ['SUN', 'MON', 'TUES', 'WED', 'THURS', 'FRI', 'SAT'];
+  let days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   return days[day];
 }
 

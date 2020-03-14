@@ -2,51 +2,131 @@
   viewport-fill: black;
 }
 
+#image{
+  x: -5;
+  y: -5;
+  width: 105%;
+  height: 105%;
+}
+
 #timeLabel {
-  font-size: 80;
+  font-size: 75;
   text-length: 32;
   text-anchor: middle;
   x: 50%;
-  y: 50%+40;
+  y: 55%;
   fill: white;
+  font-family: Colfax-Light;
 }
 
 #batteryLabel {
-  font-size: 15;
+  font-size: 20;
   text-length: 32;
   fill: white;
-  x: 60%;
-  y: 75%;
+  x: 65%;
+  y: 65%;
 }
+
 
 #stepsLabel {
   font-size: 20;
   text-length: 32;
   fill: white;
-  x: 40%;
-  y: 80%;
+  x: 50%;
+  y: 75%;
 }
 
 #heartRateLabel {
   font-size: 20;
   text-length: 32;
   fill: white;
-  x: 30%;
-  y: 75%;
+  x: 37%;
+  y: 65%;
 }
 
 #dayLabel {
   font-size: 20;
   text-length: 32;
   fill: white;
-  x: 25%;
-  y: 40%;
+  x: 33%;
+  y: 33%;
 }
 
 #dateLabel {
   font-size: 20;
   text-length: 32;
   fill: white;
+  x: 48%;
+  y: 33%;
+}
+
+/* ICONS */
+
+.heart-container {
+  width: 8%;
+  height: 8%;
+  x: 27%;
+  y: 58%;
+  fill: #ffa6c5;
+}
+
+.heart {
+  width: 8%;
+  height: 8%;
+  x: 27%;
+  y: 58%;
+}
+
+.battery-container{
+  width: 8%;
+  height: 8%;
   x: 55%;
-  y: 40%;
+  y: 58%;
+  fill: #595959;
+}
+
+.green{
+  width: 8%;
+  height: 8%;
+  x: 55%;
+  y: 58%;
+  fill: #7fd672;
+}
+
+.yellow {
+  width: 4%;
+  height: 8%;
+  x: 55%;
+  y: 58%;
+  fill: #f0f285;
+}
+
+.red {
+  width: 2%;
+  height: 8%;
+  x: 55%;
+  y: 58%;
+  fill: #f05454;
+}
+
+.battery {
+  width: 8%;
+  height: 8%;
+  x: 55%;
+  y: 58%;
+}
+
+.steps-container {
+  width: 8%;
+  height: 8%;
+  x: 40%;
+  y: 68%;
+  fill: #86cbcf;
+}
+
+.steps {
+  width: 8%;
+  height: 8%;
+  x: 40%;
+  y: 68%;
 }

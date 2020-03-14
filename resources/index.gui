@@ -1,8 +1,21 @@
 <svg class="background">
+  <image id="image" href="daisy.jpg"/>
   <text id="dayLabel" />
   <text id="dateLabel" />
   <text id="timeLabel" />
+  <rect  class="battery-container" >
+    <rect id="battery-color" class="red" />
+    <image class="battery" href="icons/battery-icon.png" />
+  </rect>
   <text id="batteryLabel" />
+  <rect class="steps-container" >
+    <image class="steps" href="icons/step-icon.png" />
+  </rect>
   <text id="stepsLabel" />
+  <rect class="heart-container" >
+    <image class="heart" href="icons/heart-icon.png" />
+  </rect>
   <text id="heartRateLabel" />
+
+
 </svg>
