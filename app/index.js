@@ -17,6 +17,17 @@ const dateLabel = document.getElementById("dateLabel");
 const dayLabel = document.getElementById("dayLabel");
 const batteryFill = document.getElementById("battery-color");
 
+//CHOOSING BACKGROUND POSITION ACCORDING TO DEVICE
+if (device.screen.width === 300) {
+  img.x = -5;
+  img.y = -5;
+  img.width = 315;
+  img.height = 315;
+  img.href = 'daisy-versa.jpg';
+} else {
+  img.href = 'daisy-ionic.jpg';
+}
+
 //TIME
 clock.granularity = "minutes";
 clock.ontick = (evt) => {

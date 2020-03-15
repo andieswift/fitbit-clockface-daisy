@@ -2,13 +2,6 @@
   viewport-fill: black;
 }
 
-#image{
-  x: -5;
-  y: -5;
-  width: 105%;
-  height: 105%;
-}
-
 #timeLabel {
   font-size: 75;
   text-length: 32;
