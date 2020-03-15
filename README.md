@@ -15,4 +15,4 @@ A clockface for fitbit versa with a hand-drawn daisy wreath.
 - User can see today's date and month
 
 ## Example of App
-![Screenshot of App](./fitbit-screenshoot.png)
+![Screenshot of App](./fitbit-screenshot.png)
